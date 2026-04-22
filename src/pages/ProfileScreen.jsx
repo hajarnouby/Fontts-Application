@@ -1,0 +1,113 @@
+import React from 'react';
+import Avatar from '../components/Avatar';
+import Badge from '../components/Badge';
+import Card from '../components/Card';
+import Divider from '../components/Divider';
+import { Ionicons } from '@expo/vector-icons';
+import { MENU_ITEMS } from '../constants';
+import './ProfileScreen.css';
+
+export default function ProfileScreen({ navigation }) {
+  return (
+    <div className="wrapscr profile">
+      <div className="scrl hide-scrollbar">
+        <div className="scrlcon">
+          <div className="proftop">
+            <div className="logobox">
+              <svg
+                className="fmark"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="30"
+                viewBox="0 0 24 30"
+                fill="none"
+                aria-label="Fontts logo"
+              >
+                <path
+                  d="M5.50781 0C6.74337 0 8.72026 0.413924 11.4385 1.24121C14.294 2.09607 16.422 2.52344 17.8223 2.52344C19.2507 2.52343 20.3789 2.20593 21.207 1.57129C22.0136 0.95307 23.1656 0.578054 24 1.1582C23.396 5.12917 21.2815 7.11426 17.6572 7.11426C16.559 7.11423 15.0352 6.93561 13.0859 6.57715C10.6697 5.97047 5.96076 4.96387 5.05469 4.96387C4.75277 4.96391 4.49206 5.08786 4.27246 5.33594C4.18046 5.42834 5.4371 7.66387 6.92773 10.2559L7.19043 8.15039C8.61805 7.46105 9.8125 7.11627 10.7734 7.11621C11.7342 7.11621 12.5307 7.19887 13.1621 7.36426L12.5039 11.791H18.6396C18.8867 12.37 19.0107 12.9349 19.0107 13.4863C19.0107 14.0377 18.7499 14.5066 18.2285 14.8926C17.7068 15.2511 17.0472 15.4307 16.251 15.4307H11.9268L11.5146 17.1924C14.9742 18.847 17.0752 19.912 17.0752 23.166C17.0752 25.6201 16.43 27.3576 15.1396 28.3779C13.8492 29.3707 12.3246 29.8672 10.5674 29.8672C8.81034 29.8671 7.45115 29.4253 6.49023 28.543C5.5294 27.633 5.04883 26.4333 5.04883 24.9443C5.04884 24.6962 5.07597 24.3791 5.13086 23.9932L6.24316 15.4307H2.37207C2.53679 13.859 2.67436 12.6459 2.78418 11.791H4.9043C2.33752 8.7059 0.000838605 5.56841 0 4.8623C0 3.29613 0.332255 2.2752 1.26562 1.36523C2.2266 0.455233 3.64079 1.25315e-05 5.50781 0ZM11.3584 18.1172C10.8565 21.4907 10.589 23.603 10.5576 24.4541C10.5576 25.2747 10.6681 25.8522 10.8877 26.1865C11.1386 26.5208 11.4207 26.6884 11.7344 26.6885C12.4873 26.6885 13.1462 26.4298 13.7109 25.9131C14.2756 25.366 14.5576 24.5152 14.5576 23.3604C14.5576 21.0809 13.4915 19.333 11.3584 18.1172Z"
+                  fill="#A020F0"
+                />
+              </svg>
+            </div>
+            <button
+              className="bellbox"
+              onClick={() => navigation.navigate('Notifications')}
+            >
+              <Ionicons name="notifications-outline" size={20} color="var(--primary)" />
+            </button>
+          </div>
+
+          <Card bordered className="hprof">
+            <div className="havrow">
+              <Avatar size="lg" name="Hajar Ahmed" ring ringColor="var(--primary)" />
+              <div className="profmeta">
+                <h2 className="hname">Hajar Ahmed</h2>
+                <span className="hsub">@hajar.design</span>
+              </div>
+              <Badge label="Expert" color="var(--primary)" />
+            </div>
+            <div className="profactions">
+              <button className="profbtn">Edit Profile</button>
+              <button className="profbtn profbtnout">Share</button>
+            </div>
+            <div className="hstrow">
+              <div className="hstcol">
+                <p className="hstnum">47</p>
+                <span className="hstlbl">Projects</span>
+              </div>
+              <span className="hstdiv" />
+              <div className="hstcol">
+                <p className="hstnum">4.9</p>
+                <span className="hstlbl">Rating</span>
+              </div>
+              <span className="hstdiv" />
+              <div className="hstcol">
+                <p className="hstnum">$12.4k</p>
+                <span className="hstlbl">Earned</span>
+              </div>
+            </div>
+          </Card>
+
+          <Card bordered className="walcard">
+            <div className="walrow">
+              <div>
+                <span className="t-cap">Available Balance</span>
+                <h3 className="walbal">$4,250.00</h3>
+              </div>
+              <button className="wallink"
+                onClick={() => navigation.navigate('Wallet')}>
+                View Details →
+              </button>
+            </div>
+            <div className="walescrow">
+              <Ionicons name="lock-closed" size={12} color="var(--text-mut)" />
+              <span className="walesc">$1,800 in escrow</span>
+            </div>
+          </Card>
+
+          <p className="menulbl">Account</p>
+          <div className="menulist">
+            {MENU_ITEMS.map((item, i) => (
+              <div key={item.id}>
+                <button className="menuitem"
+                  onClick={() => navigation.navigate(item.screen)}>
+                  <span className="menuico">
+                    <Ionicons name={item.icon} size={20} color="var(--text-pr)" />
+                  </span>
+                  <span className="menutxt">{item.label}</span>
+                  <Ionicons name="chevron-forward" size={18} color="var(--text-mut)" />
+                </button>
+                {i < MENU_ITEMS.length - 1 && <Divider />}
+              </div>
+            ))}
+          </div>
+
+          <button className="menulogout">
+            <Ionicons name="log-out-outline" size={20} color="var(--error)" />
+            <span className="logotxt">Log Out</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
