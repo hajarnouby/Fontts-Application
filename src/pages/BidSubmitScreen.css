@@ -1,0 +1,71 @@
+.bid-submit .bsumcrd {
+  margin-bottom: var(--sec-gap);
+}
+
+.bid-submit .bsumcrd .t-lbl {
+  margin-bottom: 0;
+}
+
+.bid-submit .bsumcrd .t-h4 {
+  margin-top: 4px;
+}
+
+.bid-submit .sechead {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: var(--sec-gap);
+  color: var(--text-pr);
+}
+
+.bid-submit .timepills {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.bid-submit .pitchcnt {
+  text-align: right;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-sec);
+}
+
+.bid-submit .attrow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.bid-submit .attdash {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--card-r);
+  border: 1px dashed var(--bdr-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bid-submit .attdash:hover {
+  border-color: var(--primary);
+}
+
+.bid-submit .attlbl {
+  font-size: 10px;
+  color: var(--text-sec);
+  margin-top: 4px;
+}
+
+.bid-submit .subwrap {
+  margin-top: 24px;
+}
+
+.bid-submit .subnote {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--text-sec);
+}
