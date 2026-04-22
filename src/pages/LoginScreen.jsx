@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { C } from '../styles/styles';
 import AppInput from '../components/AppInput';
 import AppButton from '../components/AppButton';
+import InkDrop from '../components/InkDrop';
 import './LoginScreen.css';
 
 export default function LoginScreen({ navigation }) {
@@ -10,27 +12,39 @@ export default function LoginScreen({ navigation }) {
   return (
     <div className="wrapscr login">
       <div className="scrl hide-scrollbar">
-        <div className="scrlcon" style={{ justifyContent: 'center', flex: 1, display: 'flex', flexDirection: 'column' }}>
-          <div className="logoarea">
-            <h1 className="t-h1">Fontts.</h1>
-            <p className="t-p">Welcome back to Fontts.</p>
+        <div className="scrlcon">
+          <InkDrop size={180} opacity={0.04} style={{ top: -50, left: -50 }} />
+
+          <div className="logowrap">
+            <h1 className="logotxt">Create Your Account</h1>
+            <p className="logosub">Welcome back</p>
           </div>
 
-          <div className="formbox">
-            <AppInput placeholder="Email Address" value={email} onChangeText={setEmail} keyboardType="email-address" icon="mail-outline" />
-            <div style={{ height: 16 }} />
-            <AppInput placeholder="Password" value={password} onChangeText={setPassword} secureTextEntry icon="lock-closed-outline" />
-            
-            <button className="forgotbtn">Forgot Password?</button>
+          <div className="formgrp">
+            <AppInput placeholder="Email" value={email}
+              onChangeText={setEmail} icon="mail-outline" keyboardType="email-address" />
+            <AppInput placeholder="Password" value={password}
+              onChangeText={setPassword} icon="lock-closed-outline" secureTextEntry />
+          </div>
 
-            <div style={{ height: 24 }} />
-            <AppButton label="Log In" variant="fill" fullWidth
-              onPress={() => navigation.replace('DesignerTabs')} />
-            
-            <div className="altrow">
-              <span className="alttxt">Don't have an account?</span>
-              <button className="altbtn" onClick={() => navigation.navigate('SignUp')}>Sign Up</button>
-            </div>
+          <button className="forgot">
+            <span className="forgottxt">Forgot Password?</span>
+          </button>
+
+          <AppButton label="Log In" variant="fill" fullWidth
+            onPress={() => navigation.replace('DesignerTabs')} />
+
+          <div className="divrow">
+            <span className="divline" />
+            <span className="divtxt">or</span>
+            <span className="divline" />
+          </div>
+
+          <AppButton label="Continue with Google" variant="out" fullWidth onPress={() => {}} />
+
+          <div className="linkrow">
+            <span className="linktxt">Don't have an account? </span>
+            <button className="linkhl" onClick={() => navigation.navigate('SignUp')}>Sign Up</button>
           </div>
         </div>
       </div>
