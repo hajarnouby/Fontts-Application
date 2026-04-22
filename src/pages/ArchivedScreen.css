@@ -1,0 +1,24 @@
+/* ArchivedScreen */
+.archived .scrlcon {
+  flex: 1;
+}
+.archived .empty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  flex-direction: column;
+}
+.archived .emtit {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-pr);
+  margin-top: 16px;
+}
+.archived .emsub {
+  font-size: 11px;
+  color: var(--text-sec);
+  margin-top: 6px;
+  text-align: center;
+}
