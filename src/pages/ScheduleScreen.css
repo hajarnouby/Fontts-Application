@@ -1,0 +1,15 @@
+/* ScheduleScreen */
+.schedule .calhead {
+  margin-bottom: var(--page-pad);
+}
+.schedule .empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.schedule .emtxt {
+  font-size: 11px;
+  color: var(--text-sec);
+  margin-top: 10px;
+}
