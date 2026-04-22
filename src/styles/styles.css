@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: #0b071f;
+  --card: #130e28;
+  --card-el: #1a1035;
+  --primary: #a020f0;
+  --accent: #fe0149;
+  --text-pr: #f5f5f5;
+  --text-sec: rgba(245, 245, 245, 0.5);
+  --text-mut: rgba(245, 245, 245, 0.3);
+  --bdr-sub: rgba(160, 32, 240, 0.2);
+  --bdr-act: #a020f0;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #fe0149;
+  --purple-a: rgba(160, 32, 240, 0.12);
+  --purple-b: rgba(160, 32, 240, 0.1);
+  --purple-c: rgba(160, 32, 240, 0.06);
+  --green-a: rgba(34, 197, 94, 0.12);
+  --green-b: rgba(34, 197, 94, 0.1);
+  --amber-a: rgba(245, 158, 11, 0.12);
+  --amber-b: rgba(245, 158, 11, 0.08);
+  --red-a: rgba(254, 1, 73, 0.12);
+  --red-b: rgba(254, 1, 73, 0.1);
+  --divider: rgba(245, 245, 245, 0.06);
+  --white-10: rgba(245, 245, 245, 0.1);
+  --white-20: rgba(245, 245, 245, 0.2);
+
+  /* Spacing */
+  --page-pad: 16px;
+  --sec-gap: 20px;
+  --card-pad: 20px;
+  --card-r: 16px;
+  --btn-r: 100px;
+  --pill-r: 100px;
+  --input-r: 12px;
+  --av-r: 999px;
+  --item-h: 56px;
+  --btn-h: 52px;
+  --top-bar-h: 56px;
+  --stat-bar-h: 44px;
+  --tab-bar-h: 80px;
+
+  /* Font */
+  --font: "Poppins", sans-serif;
+}
+
+/* ── Reset & Base ── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text-pr);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.wrapscr,
+.wrapscr * {
+  font-family: var(--font);
+}
+
+body {
+  font-family: var(--font);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+input,
+textarea {
+  font-family: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.t-h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--text-pr);
+}
+.t-h2 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--text-pr);
+}
+.t-h3 {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--text-pr);
+}
+.t-h4 {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-pr);
+}
+.t-p {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-pr);
+}
+.t-lbl {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-sec);
+}
+.t-btn {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-pr);
+}
+.t-tab {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 11px;
+}
+.t-cap {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--text-sec);
+}
+
+/* ── Global Layout ── */
+.wrapscr {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+.scrl {
+  flex: 1;
+  overflow-y: auto;
+}
+.scrlcon {
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
+  padding-bottom: 40px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

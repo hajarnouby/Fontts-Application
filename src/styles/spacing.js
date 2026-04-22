@@ -1,0 +1,15 @@
+export const S = {
+  pagePad:  16,
+  secGap:   20,
+  cardPad:  20,
+  cardR:    16,
+  btnR:     100,
+  pillR:    100,
+  inputR:   12,
+  avR:      999,
+  itemH:    56,
+  btnH:     52,
+  topBarH:  56,
+  statBarH: 44,
+  tabBarH:  80,
+};
