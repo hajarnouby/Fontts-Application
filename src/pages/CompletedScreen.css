@@ -1,0 +1,6 @@
+/* CompletedScreen */
+.completed .count {
+  font-size: 11px;
+  color: var(--text-sec);
+  margin-bottom: var(--page-pad);
+}
