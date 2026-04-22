@@ -1,0 +1,15 @@
+/* FindWorkScreen */
+.find-work .catrow {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  padding: 4px 0;
+  overflow-x: auto;
+}
+.find-work .reslbl {
+  font-size: 11px;
+  color: var(--text-sec);
+  margin-bottom: 12px;
+}
