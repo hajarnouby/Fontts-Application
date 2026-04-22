@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, View, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
+import { C } from '../styles/styles';
 
 export default function Toggle({ value, onToggle, color = C.success }) {
   return (

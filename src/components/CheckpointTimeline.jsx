@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
-import { T } from '../styles/typography';
-import { S } from '../styles/spacing';
+import { C, T, S } from '../styles/styles';
 import { CHECKPOINT_STATUS } from '../constants';
 
 export default function CheckpointTimeline({ checkpoints = [] }) {

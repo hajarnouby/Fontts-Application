@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
-import { T } from '../styles/typography';
+import { C, T } from '../styles/styles';
 
 export default function FilterPill({ label, active, onPress }) {
   return (

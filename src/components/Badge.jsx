@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
+import { C } from '../styles/styles';
 
 export default function Badge({ label, color = C.primary }) {
   const bgColor = color === C.primary ? C.purpleA

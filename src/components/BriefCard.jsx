@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
-import { T } from '../styles/typography';
-import { S } from '../styles/spacing';
+import { C, T, S } from '../styles/styles';
 import Avatar from './Avatar';
 import Badge from './Badge';
 

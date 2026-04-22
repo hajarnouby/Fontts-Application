@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar as RNStatusBar } from 'react-native';
-import { C } from '../styles/colors';
+import { C } from '../styles/styles';
 
 export default function StatusBar() {
   return (

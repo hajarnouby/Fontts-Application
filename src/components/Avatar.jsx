@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
-import { S } from '../styles/spacing';
+import { C, S } from '../styles/styles';
 import { getInitials } from '../utils/helpers';
 
 const SIZES = { lg: 72, md: 48, sm: 36 };

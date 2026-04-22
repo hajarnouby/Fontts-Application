@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
-import { S } from '../styles/spacing';
+import { C, S } from '../styles/styles';
 
 export default function Card({
   children, elevated, bordered, style, className,

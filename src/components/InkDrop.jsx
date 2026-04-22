@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
+import { C } from '../styles/styles';
 
 export default function InkDrop({ size = 120, opacity = 0.06, style }) {
   return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
-import { T } from '../styles/typography';
+import { C, T } from '../styles/styles';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function FileRow({ filename, type, size, version, onDownload }) {

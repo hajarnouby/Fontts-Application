@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
-import { C } from '../styles/colors';
-import { T } from '../styles/typography';
-import { S } from '../styles/spacing';
+import { C, T, S } from '../styles/styles';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function AppInput({
