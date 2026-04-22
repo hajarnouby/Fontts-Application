@@ -1,0 +1,74 @@
+/* UrgentMoneyScreen */
+.urgent-money .herocrd {
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  padding: var(--card-pad);
+  margin-bottom: var(--sec-gap);
+  border: 1px solid var(--bdr-sub);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.urgent-money .herocrd .t-h4 {
+  margin-top: 8px;
+}
+.urgent-money .herocrd .t-cap {
+  margin-top: 4px;
+}
+.urgent-money .ujob {
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  padding: var(--card-pad);
+  margin-bottom: 12px;
+  border: 1px solid rgba(254, 1, 73, 0.2);
+}
+.urgent-money .ujobtop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.urgent-money .utimepill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--red-a);
+  border-radius: 100px;
+  padding: 3px 8px;
+}
+.urgent-money .utimetxt {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--accent);
+}
+.urgent-money .ujobtit {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-pr);
+  margin-bottom: 4px;
+}
+.urgent-money .ujobcl {
+  font-size: 11px;
+  color: var(--text-sec);
+  margin-bottom: 12px;
+}
+.urgent-money .ubidbtn {
+  background-color: var(--accent);
+  border-radius: var(--btn-r);
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.urgent-money .ubidbtn:hover {
+  opacity: 0.85;
+}
+.urgent-money .ubidtxt {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-pr);
+}
