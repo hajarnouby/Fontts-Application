@@ -1,0 +1,83 @@
+/* AIScannerScreen */
+.ai-scanner .logocrd {
+  margin-bottom: 14px;
+  text-align: center;
+}
+.ai-scanner .logoprev {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--card-r);
+  background-color: var(--card-el);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px;
+}
+.ai-scanner .scrlbl {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.ai-scanner .scrring {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+.ai-scanner .scnum {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--success);
+}
+.ai-scanner .scpct {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--success);
+}
+.ai-scanner .scgrade {
+  text-align: center;
+  color: var(--success);
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.ai-scanner .sectit {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: var(--sec-gap);
+  color: var(--text-pr);
+}
+.ai-scanner .airow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.ai-scanner .aitit {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-pr);
+}
+.ai-scanner .aidotrow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+.ai-scanner .aidot {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--primary);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+.ai-scanner .aitxt {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-pr);
+}
