@@ -1,0 +1,26 @@
+/* LanguageScreen */
+.language .langrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: var(--item-h);
+  background-color: var(--card);
+  border-radius: 12px;
+  padding: 0 var(--page-pad);
+  margin-bottom: 8px;
+  border: 1px solid var(--bdr-sub);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.language .langrow:hover {
+  border-color: var(--primary);
+}
+.language .flag {
+  font-size: 20px;
+  margin-right: 12px;
+}
+.language .langtxt {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text-pr);
+}
