@@ -1,0 +1,65 @@
+/* SkillHubScreen */
+.skillhub .header {
+  padding: var(--sec-gap) var(--page-pad) 10px;
+}
+.skillhub .header .t-cap {
+  margin-top: 4px;
+}
+.skillhub .stkcrd {
+  margin-bottom: 4px;
+}
+.skillhub .stkrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.skillhub .stkinfo {
+  flex: 1;
+}
+.skillhub .sectit {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 14px;
+  margin-top: var(--sec-gap);
+  color: var(--text-pr);
+}
+.skillhub .crsrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  padding: var(--page-pad);
+  margin-bottom: 10px;
+  border: 1px solid var(--bdr-sub);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.skillhub .crsrow:hover {
+  border-color: var(--primary);
+}
+.skillhub .crsico {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: var(--purple-a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.skillhub .crsinfo {
+  flex: 1;
+  margin-left: 12px;
+}
+.skillhub .crstit {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-pr);
+}
+.skillhub .crsmeta {
+  font-size: 11px;
+  color: var(--text-sec);
+  margin-top: 2px;
+}
