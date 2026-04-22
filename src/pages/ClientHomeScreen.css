@@ -1,0 +1,87 @@
+/* ClientHomeScreen */
+.client-home .scrlcon {
+  padding-top: var(--sec-gap);
+}
+
+.client-home .hrow {
+  isplay: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: var(--sec-gap);
+}
+
+.client-home .hinfo {
+  flex: 1;
+}
+
+.client-home .statrow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: var(--sec-gap);
+  gap: 12px;
+}
+
+.client-home .qarow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: var(--sec-gap);
+}
+
+.client-home .qabtn {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: var(--btn-h);
+  background-color: var(--primary);
+  border-radius: var(--card-r);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.client-home .qabtn:hover {
+  opacity: 0.85;
+}
+
+.client-home .qabtn2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: var(--btn-h);
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  border: 1px solid var(--bdr-sub);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.client-home .qabtn2:hover {
+  opacity: 0.85;
+}
+
+.client-home .qatxt {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-pr);
+}
+
+.client-home .sechead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.client-home .seeall {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--primary);
+  cursor: pointer;
+}
