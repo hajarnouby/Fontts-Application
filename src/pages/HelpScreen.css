@@ -1,0 +1,24 @@
+/* HelpScreen */
+.help .helprow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: var(--item-h);
+  background-color: var(--card);
+  border-radius: 12px;
+  padding: 0 var(--page-pad);
+  margin-bottom: 8px;
+  border: 1px solid var(--bdr-sub);
+  gap: 12px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.help .helprow:hover {
+  opacity: 0.85;
+  border-color: var(--primary);
+}
+.help .helptxt {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text-pr);
+}
