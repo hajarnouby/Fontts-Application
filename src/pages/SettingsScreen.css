@@ -1,0 +1,69 @@
+/* SettingsScreen */
+.settings .miniprf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  padding: var(--page-pad);
+  margin-bottom: var(--sec-gap);
+  border: 1px solid var(--bdr-sub);
+}
+.settings .mpinfo {
+  flex: 1;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.settings .mpname {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-pr);
+}
+.settings .mpedit {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--primary);
+  cursor: pointer;
+}
+.settings .seclbl {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-sec);
+  margin-bottom: 8px;
+  margin-top: var(--sec-gap);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.settings .secgrp {
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  border: 1px solid var(--bdr-sub);
+  overflow: hidden;
+}
+.settings .setrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: var(--item-h);
+  padding: 0 var(--page-pad);
+}
+.settings .setico {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+.settings .settxt {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text-pr);
+}
+.settings .setright {
+  margin-left: 8px;
+}
+.settings .dangtxt {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--error);
+}
