@@ -1,0 +1,17 @@
+/* PostBriefScreen */
+.post-brief .seclbl {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+  margin-top: var(--sec-gap);
+  color: var(--text-pr);
+}
+.post-brief .pillrow {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  overflow-x: auto;
+}
+.post-brief .btnwrap {
+  margin-top: 28px;
+}
