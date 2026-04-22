@@ -1,0 +1,29 @@
+/* ReviewFileScreen */
+.review-file .preview {
+  height: 280px;
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--sec-gap);
+  border: 1px solid var(--bdr-sub);
+}
+.review-file .prevtxt {
+  font-size: 11px;
+  color: var(--text-sec);
+  margin-top: 10px;
+}
+.review-file .metarow {
+  margin-bottom: var(--sec-gap);
+}
+.review-file .metarow .semi {
+  font-weight: 600;
+}
+.review-file .btnrow {
+  margin-top: var(--sec-gap);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
