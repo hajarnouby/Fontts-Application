@@ -1,0 +1,26 @@
+/* ClientWorkspaceScreen */
+.client-workspace .desrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.client-workspace .desinfo {
+  flex: 1;
+  margin-left: 12px;
+}
+.client-workspace .desinfo .semi {
+  font-weight: 600;
+}
+.client-workspace .sectit {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: var(--sec-gap);
+  color: var(--text-pr);
+}
+.client-workspace .btnrow {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
