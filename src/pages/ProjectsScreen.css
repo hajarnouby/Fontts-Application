@@ -1,0 +1,9 @@
+/* ProjectsScreen */
+.projects .pillrow {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: var(--sec-gap);
+  padding: 4px 0;
+  overflow-x: auto;
+}
