@@ -1,0 +1,86 @@
+/* HomeScreen */
+.home .scrlcon {
+  padding-top: var(--sec-gap);
+}
+.home .hhead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: var(--sec-gap);
+}
+.home .hinf {
+  flex: 1;
+}
+.home .balcrd {
+  margin-bottom: 14px;
+}
+.home .balrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .balamt {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--success);
+  margin-top: 4px;
+}
+.home .balbtn {
+  background-color: var(--card-el);
+  border: 1px solid var(--bdr-sub);
+  border-radius: var(--btn-r);
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-pr);
+  cursor: pointer;
+}
+.home .quickcrd {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: var(--sec-gap);
+}
+.home .qbtn {
+  flex: 1;
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  border: 1px solid var(--bdr-sub);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.home .qbtn:hover {
+  opacity: 0.85;
+}
+.home .qico {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .qtxt {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-pr);
+}
+.home .sechead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.home .seeall {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--primary);
+  cursor: pointer;
+}
