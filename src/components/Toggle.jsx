@@ -1,24 +1,30 @@
 import React from 'react';
-import { TouchableOpacity, View, StyleSheet } from 'react-native';
-import { C } from '../styles/styles';
+import { View, TouchableOpacity, StyleSheet } from 'react-native';
+import { C } from '../styles/colors';
 
-export default function Toggle({ value, onToggle, color = C.success }) {
+export default function Toggle({ value, onToggle, color }) {
+  const trackColor = color || C.primary;
+
   return (
     <TouchableOpacity
-      style={[ss.tbg, { backgroundColor: value ? color : C.bdrSub }]}
+      style={[
+        ss.togwrap,
+        value ? [ss.togon, { backgroundColor: trackColor }] : ss.togoff,
+      ]}
       onPress={onToggle}
-      activeOpacity={0.8}
+      activeOpacity={0.75}
     >
-      <View style={[ss.tknob, value ? ss.tknobon : ss.tknoboff]} />
+      <View style={ss.togcir} />
     </TouchableOpacity>
   );
 }
 
 const ss = StyleSheet.create({
-  tbg:     { width: 44, height: 24, borderRadius: 12,
-             justifyContent: 'center', paddingHorizontal: 2 },
-  tknob:   { width: 20, height: 20, borderRadius: 10,
-             backgroundColor: C.white },
-  tknoboff: { alignSelf: 'flex-start' },
-  tknobon:  { alignSelf: 'flex-end' },
+  togwrap: { width: 51, height: 31, borderRadius: 100,
+             justifyContent: 'center', padding: 2 },
+  togon:   { backgroundColor: C.primary, alignItems: 'flex-end' },
+  togoff:  { backgroundColor: 'rgba(245,245,245,0.15)',
+             alignItems: 'flex-start' },
+  togcir:  { width: 27, height: 27, borderRadius: 100,
+             backgroundColor: '#FFFFFF' },
 });

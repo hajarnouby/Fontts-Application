@@ -1,0 +1,84 @@
+/* JobsScreen */
+.jobs .srchrow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.jobs .srchbox {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--card);
+  border-radius: var(--input-r);
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--bdr-sub);
+}
+.jobs .srchbox:focus-within {
+  border-color: var(--primary);
+}
+.jobs .srchico {
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.jobs .srchtxt {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-pr);
+  background: none;
+  border: none;
+  outline: none;
+}
+.jobs .srchtxt::placeholder {
+  color: var(--text-mut);
+}
+.jobs .fltbtn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--input-r);
+  background-color: var(--card);
+  border: 1px solid var(--bdr-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  flex-shrink: 0;
+}
+.jobs .fltbtn:hover {
+  border-color: var(--primary);
+}
+.jobs .tabrow {
+  margin-bottom: 14px;
+  overflow-x: auto;
+}
+.jobs .tabrowcon {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding-right: var(--page-pad);
+}
+.jobs .sortrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.jobs .sortlbl {
+  font-size: 11px;
+  color: var(--text-sec);
+}
+.jobs .sorttog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.jobs .sorttxt {
+  font-size: 11px;
+  color: var(--text-sec);
+}

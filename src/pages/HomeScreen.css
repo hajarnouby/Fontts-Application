@@ -1,86 +1,315 @@
-/* HomeScreen */
 .home .scrlcon {
-  padding-top: var(--sec-gap);
-}
-.home .hhead {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: var(--sec-gap);
-}
-.home .hinf {
-  flex: 1;
-}
-.home .balcrd {
-  margin-bottom: 14px;
-}
-.home .balrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.home .balamt {
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--success);
-  margin-top: 4px;
-}
-.home .balbtn {
-  background-color: var(--card-el);
-  border: 1px solid var(--bdr-sub);
-  border-radius: var(--btn-r);
-  padding: 8px 16px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-pr);
-  cursor: pointer;
-}
-.home .quickcrd {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  margin-bottom: var(--sec-gap);
-}
-.home .qbtn {
-  flex: 1;
-  background-color: var(--card);
-  border-radius: var(--card-r);
-  border: 1px solid var(--bdr-sub);
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  transition: opacity 0.15s;
-}
-.home .qbtn:hover {
-  opacity: 0.85;
-}
-.home .qico {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home .qtxt {
-  font-weight: 500;
-  font-size: 12px;
-  color: var(--text-pr);
-}
-.home .sechead {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14px;
-}
-.home .seeall {
-  font-weight: 500;
-  font-size: 12px;
-  color: var(--primary);
-  cursor: pointer;
-}
+    padding-top: 12px;
+  }
+  
+  .home .toprow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .home .logobox {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: var(--purple-a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .logosym {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary);
+  }
+  .home .bellbox {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--bdr-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .home .bellbox:hover {
+    border-color: var(--primary);
+  }
+  .home .belldot {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--accent);
+  }
+  
+  .home .datetxt {
+    font-size: 11px;
+    color: var(--text-sec);
+    margin-bottom: 4px;
+  }
+  
+  .home .greetrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .home .greetcol {
+    flex: 1;
+  }
+  .home .greettxt {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--text-pr);
+  }
+  .home .greetname {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--text-pr);
+  }
+  
+  .home .momcard {
+    margin-bottom: 16px;
+  }
+  .home .momrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .home .momcol {
+    flex: 1;
+  }
+  .home .momlbl {
+    font-size: 11px;
+    color: var(--text-sec);
+    margin-bottom: 4px;
+  }
+  .home .momtit {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-pr);
+    margin-bottom: 6px;
+  }
+  .home .momsub {
+    font-size: 11px;
+    color: var(--text-sec);
+    line-height: 18px;
+  }
+  
+  .home .dotgrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .dotlbl {
+    font-size: 10px;
+    color: var(--text-sec);
+    margin-bottom: 6px;
+  }
+  .home .dotrows {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .home .dotrow {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+  .home .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: rgba(160, 32, 240, 0.15);
+  }
+  .home .dotfill {
+    background-color: var(--primary);
+  }
+  
+  .home .statrow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .home .statcard {
+    flex: 1;
+    background-color: var(--card);
+    border-radius: var(--card-r);
+    padding: 14px 12px;
+    border: 1px solid var(--bdr-sub);
+    min-height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .home .statlbl {
+    font-size: 10px;
+    color: var(--text-sec);
+    margin-bottom: 6px;
+  }
+  .home .statnum {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--text-pr);
+  }
+  .home .statsub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+    min-height: 14px;
+  }
+  .home .statsubt {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--primary);
+  }
+  .home .earnrow {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .home .earncur {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--success);
+  }
+  
+  .home .sechead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .home .sectit {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-pr);
+  }
+  .home .seeall {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--primary);
+    cursor: pointer;
+  }
+  
+  .home .bidscrl {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: auto;
+    padding-right: var(--page-pad);
+    margin-bottom: 20px;
+  }
+  .home .bidcard {
+    min-width: 78%;
+    background-color: var(--card);
+    border-radius: var(--card-r);
+    padding: var(--card-pad);
+    border: 1px solid var(--bdr-sub);
+    flex-shrink: 0;
+  }
+  .home .bidtop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .home .bidname {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--text-pr);
+    flex: 1;
+  }
+  .home .bidtit {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-pr);
+    margin-bottom: 12px;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .home .bidbot {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .home .bidprice {
+    background-color: var(--purple-a);
+    border-radius: 100px;
+    padding: 4px 10px;
+  }
+  .home .bidpricetxt {
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--primary);
+  }
+  .home .bidtime {
+    background-color: var(--red-a);
+    border-radius: 100px;
+    padding: 4px 10px;
+  }
+  .home .bidtimetxt {
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--accent);
+  }
+  
+  .home .schrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--card);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 8px;
+    border: 1px solid var(--bdr-sub);
+    gap: 12px;
+  }
+  .home .schtimebox {
+    background-color: var(--purple-a);
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+  .home .schtime {
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--primary);
+  }
+  .home .schinfo {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home .schtit {
+    font-size: 13px;
+    color: var(--text-pr);
+    flex: 1;
+    margin-right: 8px;
+  }
+  .home .fmark {
+    width: 18px;
+    height: 22px;
+    display: block;
+  }
+  
