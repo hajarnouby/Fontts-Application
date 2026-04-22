@@ -1,0 +1,67 @@
+/* BriefDetailScreen */
+.brief-detail .bdtop {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
+}
+.brief-detail .bdinfo {
+  flex: 1;
+  margin-left: 12px;
+}
+.brief-detail .bdmeta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.brief-detail .bdexp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.brief-detail .bdexptxt {
+  font-size: 11px;
+  color: var(--warning);
+}
+.brief-detail .sectit {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: var(--sec-gap);
+  color: var(--text-pr);
+}
+.brief-detail .desc-txt {
+  line-height: 22px;
+  font-size: 14px;
+  color: var(--text-pr);
+}
+.brief-detail .reqrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.brief-detail .reqtxt {
+  font-size: 14px;
+  color: var(--text-pr);
+}
+.brief-detail .tagrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.brief-detail .tagpill {
+  background-color: var(--purple-c);
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+.brief-detail .tagtxt {
+  font-size: 11px;
+  color: var(--primary);
+}
+.brief-detail .btnrow {
+  margin-top: var(--sec-gap);
+}
