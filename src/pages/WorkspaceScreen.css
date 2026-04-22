@@ -1,0 +1,46 @@
+/* WorkspaceScreen */
+.workspace .clcrd {
+  margin-bottom: 4px;
+}
+.workspace .clrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.workspace .clinfo {
+  flex: 1;
+  margin-left: 12px;
+}
+.workspace .clinfo .semi {
+  font-weight: 600;
+}
+.workspace .sectit {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: var(--sec-gap);
+  color: var(--text-pr);
+}
+.workspace .earnrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.workspace .earnprog {
+  height: 6px;
+  background-color: var(--purple-c);
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+.workspace .earnfill {
+  height: 6px;
+  background-color: var(--success);
+  border-radius: 100px;
+}
+.workspace .botbtns {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
