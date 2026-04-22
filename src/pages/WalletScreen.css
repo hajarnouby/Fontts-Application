@@ -1,0 +1,97 @@
+/* WalletScreen */
+.wallet .balhero {
+  text-align: center;
+  margin-bottom: 14px;
+}
+.wallet .ballbl {
+  font-size: 11px;
+  color: var(--text-sec);
+}
+.wallet .balnum {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--text-pr);
+  margin-top: 4px;
+}
+.wallet .balesc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 4px;
+}
+.wallet .qarow {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--card);
+  border-radius: var(--card-r);
+  padding: var(--page-pad);
+  margin-bottom: 14px;
+  justify-content: space-between;
+  border: 1px solid var(--bdr-sub);
+}
+.wallet .qacol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.wallet .qacir {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: var(--purple-a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wallet .qalbl {
+  font-size: 10px;
+  color: var(--text-sec);
+}
+.wallet .txnhead {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: var(--text-pr);
+}
+.wallet .txnrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.wallet .txnico {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.wallet .txncol {
+  flex: 1;
+  margin-left: 12px;
+}
+.wallet .txntit {
+  font-size: 13px;
+  color: var(--text-pr);
+}
+.wallet .txndate {
+  font-size: 11px;
+  color: var(--text-sec);
+  margin-top: 2px;
+}
+.wallet .txnamt {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--success);
+}
+.wallet .txnamtn {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-sec);
+}
